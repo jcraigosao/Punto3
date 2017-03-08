@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
     City NY= new City();
     Acciones robot1= new Acciones(NY, 5);
-    //robot1.mover(NY);
+    robot1.mover(NY);
    
     
     }
