@@ -4,9 +4,11 @@ import becker.robots.City;
 import becker.robots.Direction;
 import becker.robots.Robot;
 import becker.robots.Thing;
+import java.awt.Color;
 
 //Para organizar de forma triangular la cantidad de objetos
-//debe ser inferior a 55
+//debe ser inferior a 55;
+//de lo contrario lo organiza de forma lineal
 
 public class Acciones {
     private Robot Antuan;
@@ -16,6 +18,7 @@ public class Acciones {
     public Acciones(City ciudad, int cantidad){
         this.Antuan=new Robot(ciudad, 10,0,Direction.EAST);
         this.X2=new Thing(ciudad, 3,3);
+        X2.setColor(Color.black);
     }
        
     public void mover(City ciudad){
@@ -89,6 +92,7 @@ public class Acciones {
             //para cumplir la condicion este valor debe ser 11
             for(int b=1; b<10; b++){
             this.X1= new Thing(ciudad,a,b);
+            X1.setColor(Color.black);
         }
         }
     }
